@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+section {
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+}
+
+canvas {
+    width: 50%;
+    height: 10%;
+    outline: 2px solid black;
+}
+
+.text-conatiner {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.button-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+button {
+    height: 60px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    width: 180px;
+    border-radius: 10px;
+}

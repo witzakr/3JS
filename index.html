@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My first three.js app</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "three/addons/": "./node_modules/three/examples/jsm/"
+          }
+        }
+      </script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+  <div class="text-conatiner">
+    <h2>Go on, touch it, just hold left click on the canvas</h2>
+  </div>
+  <section>
+    <canvas id="lobster"></canvas>
+  </section>
+  <div class="button-container">
+    <button id="spin">Make it spin</button>
+  </div>
+</body>
+</html>
