@@ -38,3 +38,6 @@ https://github.com/witzakr/3JS/blob/463d152bad1f9b22e06a0cb134dcded1fc11c88e/scr
     - These functions enable rotation of the model when the mouse is pressed (isMouseDown value changes to true), this was a difficult part, but I used some help from the forum (https://discourse.threejs.org/t/rotate-gltf-model-with-mouse-move/49425/2) and also help from a peer with more experience.
   - https://github.com/witzakr/3JS/blob/463d152bad1f9b22e06a0cb134dcded1fc11c88e/script.js#L107-L110
     - This a function for the spin button that allows to spin the model around the Y-axis and it also toggles the text on the button
+  - https://github.com/witzakr/3JS/blob/463d152bad1f9b22e06a0cb134dcded1fc11c88e/script.js#L112-L128
+    - This function is responsible for maintaining the animation loop and rendering the scene continuously and it also adds functionality to the spinning interaction
+-------------------------------------------------------------------------------------
