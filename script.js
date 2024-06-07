@@ -25,6 +25,12 @@ function init() {
     renderer.setSize(canvas.clientWidth, canvas.clientHeight);
 
     // Lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
+
+    const hemisphereLight = new THREE.HemisphereLight(0xaaaaaa, 0x444444, 0.5);
+    scene.add(hemisphereLight);
+
     const light = new THREE.DirectionalLight(0xffffff, 4);
     light.position.set(5, 5, 5);
     scene.add(light);
@@ -33,7 +39,6 @@ function init() {
     const loader = new GLTFLoader();
     loader.load('models/source/Lobster.gltf', (gltf) => {
         model = gltf.scene;
-        
 
         // Scale the model
         model.scale.set(2, 2, 2); // Adjust these values to make the model bigger or smaller
@@ -109,6 +114,13 @@ function animate() {
 
     if (isSpinning && model) {
         model.rotation.y += spinSpeed; // Rotate the model around the y-axis
+    }
+
+    // Update directional light position to follow camera
+    const light = scene.getObjectByName('DirectionalLight');
+    if (light) {
+        light.position.copy(camera.position);
+        light.position.z += 5;
     }
 
     controls.update();
