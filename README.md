@@ -33,7 +33,7 @@ https://github.com/witzakr/3JS/blob/463d152bad1f9b22e06a0cb134dcded1fc11c88e/scr
   - https://github.com/witzakr/3JS/blob/463d152bad1f9b22e06a0cb134dcded1fc11c88e/script.js#L60-L64
     - Adding event listeners to manipulate the object, those event listeners are using functions that will be explained later on.
   - https://github.com/witzakr/3JS/blob/463d152bad1f9b22e06a0cb134dcded1fc11c88e/script.js#L67-L72
-    - Function is responsible for adjusting the aspect ratio of the camera and resizing the renderer to fit the canvas when the window is resized. Used some stackoverflow for the help (https://discourse.threejs.org/t/resize-canvas-with-different-aspect-ratio/42439)
+    - Function is responsible for adjusting the aspect ratio of the camera and resizing the renderer to fit the canvas when the window is resized. Used some threejs forum for the help (https://discourse.threejs.org/t/resize-canvas-with-different-aspect-ratio/42439)
   - https://github.com/witzakr/3JS/blob/463d152bad1f9b22e06a0cb134dcded1fc11c88e/script.js#L74-L105
     - These functions enable rotation of the model when the mouse is pressed (isMouseDown value changes to true), this was a difficult part, but I used some help from the forum (https://discourse.threejs.org/t/rotate-gltf-model-with-mouse-move/49425/2) and also help from a peer with more experience.
   - https://github.com/witzakr/3JS/blob/463d152bad1f9b22e06a0cb134dcded1fc11c88e/script.js#L107-L110
